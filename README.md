@@ -2,7 +2,7 @@
 Introduction to Kubernetes with a simple ASP.NET Core web service.
 
 ## Local Development
-The local development environment will use Minikube and a local Docker container [registry](https://hub.docker.com/_/registry) to push the image locally. The registry will run within Minikube's Docker daemon so that Kubernetes can pull the Docker image as specified in [hello-kube.yaml](./hello-kube.yaml) configuration file.
+The local development environment will use Minikube and a local Docker container [registry](https://hub.docker.com/_/registry) to push the image locally. The registry will run within Minikube's Docker daemon so that Kubernetes can pull the Docker image as specified in [hello-kube-local.yaml](./hello-kube-local.yaml) configuration file.
 
 ### Install
 1. Install [Docker](https://docs.docker.com/get-docker/.)
