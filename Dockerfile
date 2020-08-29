@@ -10,7 +10,7 @@ COPY . .
 RUN dotnet publish -c release -o /app --no-restore
 
 # final stage/image
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1.7-alpine3.11
 WORKDIR /app
 COPY --from=build /app .
 ENTRYPOINT ["dotnet", "HelloKube.dll"]
